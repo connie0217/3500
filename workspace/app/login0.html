@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="0">
+<html>
+<head>
+<script type="text/javascript">
+	var ctx = 'http://127.0.0.1:9090/sadp-report-app';
+	var xToken = '';
+	var loginId = '';
+	 
+</script>
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/bootstrap-responsive.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/style.css" type="text/css"/>
+<link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" >
+<link rel="stylesheet" href="js/common/plugins/timepicker.css">
+<link rel="stylesheet" href="css/ui-dialog.css">
+<script type="text/javascript" src="js/common/jquery.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="js/common/jquery.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/common/dialog-plus.js"></script>
+<link type="text/css" rel="stylesheet" href="resources/css/newLoginStyle.css">
+<link type="text/css" rel="stylesheet" href="resources/css/login.css">
+<title>首钢京唐3500订单管理系统</title>
+
+<script>
+	var login_user_name;
+	function keydown(e){
+		if (!e)
+		e = window.event;
+		if ((e.keyCode || e.which) == 13) {
+			document.getElementById("loginBtn").click();
+		    return false;
+		}
+	}
+    function  onButtonClickSubmit() {
+		if(validateUserName() && validatePassword() ){
+			var username =$("#username").val();
+			var pass = $('#password1').val();
+			var crewId = $('#crewId').val();
+			var shiftId = $('#shiftId').val();
+			//var code = $('#pageCheckCode').val();
+			//login.innerHTML="正在登录... 请稍后...";
+			var d = dialog({
+			    content: '正在登录...请稍候...',
+			    padding:15,
+			    id:"loginingPop"
+			});
+			d.showModal();
+			//'system/login!login.action'
+			$.getJSON(ctx+"/system/login/login.action",{crewId:crewId,shiftId:shiftId,username:username,password:pass},function(result){
+				dialog.get('loginingPop').remove();
+				if(result.meta.success=="false" || !result.meta.success){
+		        	dialog({title:"提示",content:result.meta.message,padding:15}).showModal();
+				}else{
+					localStorage.setItem("xToken",result.data.token);
+					localStorage.setItem("loginId",result.data.username);
+					window.location.href='index.html';
+				}
+				
+	        });
+			return false;
+		}else{
+			return false;
+		}
+	}
+	function  validateUserName(){
+		var  username =$("#username").val();
+		var regExp=/^[0-9A-Za-z]{3,}$/;
+		if(username==null || username=="" || username==undefined){
+			  showDialog("请填写用户名!",document.getElementById("username"));
+			  return false;
+		  }
+		if(regExp.test(username)){
+			return true;
+		}else {
+			showDialog("用户名格式不正确!",document.getElementById("username"));
+			return false ;
+		}
+   }
+   function  validatePassword(){
+	  var  password =$('#password1').val();
+	  if(password==null || password=="" || password==undefined){
+		  showDialog("请填写密码!",document.getElementById("password1"));
+		  return false;
+	  }
+	  var regExp=/^[0-9A-Za-z]{3,}$/;
+	   if(regExp.test(password)){
+		   return true;
+	   }else{
+		   showDialog("密码格式不正确!",document.getElementById("password1"));
+		   return false;
+	   }
+   }
+   function showDialog(msg,btn){
+		var d = dialog({
+		    align:"right",
+		    padding:15,
+		    content: msg,
+		    quickClose:true
+		});
+		d.show(btn);
+	}
+   
+	function refreshCode(){
+		$("#code").attr('src',ctx+"/system/login/sendCheckCode.action?"+Math.random());
+	}
+</script>
+</head>
+<body id="loginMain" onkeydown="keydown(event);">
+	<div class="Level">
+	   
+		<a href="document/用户培训手册（全）_V1.1.rar" download="用户培训手册（全）_V1.1.rar">
+		<img src="resources/images/down.jpg"  alt="点击下载用户培训手册（全）" width="25" height="25" align="absmiddle">
+		<font color="red" size="3" height="25" align="center" >&nbsp;&nbsp;用户培训手册</font>
+		</a>
+	</div>
+	<iframe name="report1_saveAs_frame" id="report1_saveAs_frame" src="javascript:false;" style="display:none">
+	</iframe>
+	<iframe name="report1_printIFrame" id="report1_printIFrame" src="javascript:false;"
+		style="position:absolute;left:-100px;top:-100px" width="50" height="50">
+	</iframe>
+	<div class="Head">
+	</div>
+	<div class="Main">
+		<div class="MainR">
+			<div class="Header">
+				<div class="title"></div>
+			</div>
+			<div id="logArea">
+				<div id="errorDiv" class="Error"></div>
+				<form id="loginForm" method="post" onsubmit="return onButtonClickSubmit();">
+				<div class="inptr">
+					</div>
+					<div class="inptr">
+						<label for="uid">用户名</label>
+						<input type="text" id="username" name="username" value="duanxiangju" class="input" value="">
+					</div>
+					<div class="inptr">
+						<label for="password">密码</label>
+						<input type="password" id="password1" name="password" value = "123456" class="input" value="">
+					</div>
+					<!--<div class="inptr">
+						<label for="pageCheckCode">验证码</label>
+						<input type="text" id="pageCheckCode" name="pageCheckCode" class="input" value="">
+						<img alt="" src="${ctx}/system/login/sendCheckCode.action" id="code" align="absmiddle">
+						<a href="#" mce_href="#" onclick="refreshCode()">
+							<span >刷新验证码</span>
+						</a>
+					</div>
+					<div class="inptr">
+					</div>-->
+					<div class="inptr">
+						<label for="crewId">班次</label>
+						<select id="crewId" name="crewId" class="input">
+							<option value="1">甲</option>
+							<option value="2">乙</option>
+							<option value="3">丙</option>
+							<option value="4">丁</option>
+						</select>
+					</div>
+					<div class="inptr">
+						<label for="shiftId">班别</label>
+						<select id="shiftId" name="shiftId" class="input">
+							<option value="1">早</option>
+							<option value="3">晚</option>
+						</select>
+					</div>
+					<div>
+						<div style="text-align: center;">
+							<button name="action:login" id="loginBtn" type="submit" class="Button" >登  录</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footerBg">
+				<div class="copyright">
+					<div class="helpPhone">报修电话：010-88294055</div>
+					Copyright©
+  					<img src="resources/images/logo_sgai1.gif" width="40" height="10">
+					北京首钢自动化信息技术有限公司信息事业部.
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="embed1"></div>
+	<div id="embed2"></div>
+</body>
+</html>

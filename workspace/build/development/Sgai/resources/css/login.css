@@ -1,0 +1,69 @@
+body{
+  height:100%;
+}
+/*@media (min-width:0) and (max-width:800px){
+  #loginForm {
+    width: 570px;
+  }
+}*/
+
+.main{
+  position: absolute;
+  left:0;
+  top:0;
+  right:0;
+  bottom: 0;
+  /*background: url('../images/login_bg.jpg') no-repeat;*/
+}
+.main_header{
+  height: 12%;
+  width:100%;
+  position: absolute;
+  left:0;
+  top:0;
+  background: #000;
+  opacity: .3
+}
+.login_bg{
+  width:100%;
+  height:100%;
+  position: absolute;
+  z-index: -1;
+}
+#loginForm{
+  /*width:570px;
+  height:440px;*/
+  width:570px;
+  height: 40%;
+  background: #f6f6f6;
+  border-radius: 20px;
+  position: absolute;
+  margin:auto;
+  left:0;
+  top:0;
+  right:0;
+  bottom: 0;
+}
+@media (min-width:800px) and (max-width:1600px){
+  #loginForm {
+    width: 30%;
+  }
+}
+
+@media (min-height:900) and (max-height:1200px){
+  #loginForm {
+    height: 440px;
+  }
+}
+.login_user{
+  width: 89px;
+  height: 89px;
+  background: url('../images/touxiang.gif');
+  margin: 0 auto;
+  margin-top: -6%;
+}
+
+/*
+
+
+ */

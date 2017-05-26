@@ -1,0 +1,22 @@
+/**
+ * Created by tenderlitch on 2016/4/5.
+ */
+Ext.define('Sgai.view.common.lookup.LookupWindow',{
+    extend:'Ext.window.Window',
+    xtype:'lookupwin',
+    title:'查找带回',
+    width:600,
+    height:400,
+    layout:'fit',
+    autoShow:true,
+    closeAction:'destroy',
+    targetField:null,
+    listeners:{
+        lookupConfirm:function(valueRecord){
+            if(this.targetField){
+                this.targetField.fireEvent('lookupConfirm',valueRecord);
+                this.close();
+            }
+        }
+    }
+});

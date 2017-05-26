@@ -1,0 +1,616 @@
+.x-mask.splashscreen {
+	background-color: white;
+	opacity: 1
+}
+
+.x-mask-msg.splashscreen, .x-mask-msg.splashscreen div {
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	padding: 30px 5px 5px 5px;
+	border: 0;
+	background-color: transparent;
+	background-position: top center;
+	height: 65%;
+	width: 100%
+}
+
+.x-splash-icon {
+	background-image: url('../images/loading2.gif') !important;
+	background-position: center;
+	background-repeat: no-repeat
+}
+
+.zh_CN {
+	background-image: url('../flags/zh_CN.png') !important
+}
+
+.en {
+	background-image: url('../flags/us.png') !important
+}
+
+.zh_TW {
+	background-image: url('../flags/zh_TW.png') !important
+}
+
+.vn {
+	background-image: url('../flags/vn.png') !important
+}
+
+.key {
+	background-image: url('../icons/key.png') !important
+}
+
+.key-go {
+	background-image: url('../icons/key_go.png') !important
+}
+
+.cancel {
+	background-image: url('../icons/cancel.png') !important
+}
+
+.save {
+	background-image: url('../icons/disk.png') !important
+}
+
+.copy {
+	background-image: url('../icons/page_copy.png') !important
+}
+
+.add {
+	background-image: url('../icons/add.png') !important
+}
+
+.repair {
+	background-image: url('../icons/repair.png') !important
+}
+
+.play {
+	background-image: url('../icons/play.png') !important
+}
+
+.pause {
+	background-image: url('../icons/pause.png') !important
+}
+
+.alloc {
+	background-image: url('../icons/alloc.png') !important
+}
+
+.dealloc {
+	background-image: url('../icons/dealloc.png') !important
+}
+.accept {
+	background-image: url('../icons/accept.png') !important
+}
+
+.warn {
+	background-image: url('../icons/warn.png') !important
+}
+
+.edit {
+	background-image: url('../icons/pencil.png') !important
+}
+
+.approve {
+	background-image: url('../icons/approve.png') !important
+}
+
+.delete {
+	background-image: url('../icons/delete.png') !important
+}
+
+.logout {
+	background-image: url('../icons/door_in.png') !important
+}
+
+.sitemap {
+	background-image: url('../icons/sitemap_color.png') !important
+}
+
+.home {
+	background-image: url('../icons/house.png') !important
+}
+
+.menu_admin {
+	background-image: url('../icons/folder_user.png') !important
+}
+
+.app_link {
+	background-image: url('../icons/application_link.png') !important
+}
+
+.app_edit {
+	background-image: url('../icons/application_edit.png') !important
+}
+
+.app_form_edit {
+	background-image: url('../icons/application_form_edit.png') !important
+}
+
+.app_add {
+	background-image: url('../icons/application_add.png') !important
+}
+
+.menu_groups {
+	background-image: url('../icons/group_key.png') !important
+}
+
+.menu_profile {
+	background-image: url('../icons/user_edit.png') !important
+}
+
+.menu_users {
+	background-image: url('../icons/group_edit.png') !important
+}
+
+.menu_staticdata {
+	background-image: url('../icons/database_table.png') !important
+}
+
+.menu_actor {
+	background-image: url('../icons/vcard.png') !important
+}
+
+.menu_category {
+	background-image: url('../icons/tag_green.png') !important
+}
+
+.menu_language {
+	background-image: url('../icons/flag_yellow.png') !important
+}
+
+.menu_city {
+	background-image: url('../icons/briefcase.png') !important
+}
+
+.menu_country {
+	background-image: url('../icons/world.png') !important
+}
+
+.save_all {
+	background-image: url('../icons/disk_multiple.png') !important
+}
+
+.clear_filter {
+	background-image: url('../icons/filter_del.gif') !important
+}
+
+.grouping {
+	background-image: url('../icons/application_view_tile.png') !important
+}
+
+.menu_cms {
+	background-image: url('../icons/book_open.png') !important
+}
+
+.menu_films {
+	background-image: url('../icons/film.png') !important
+}
+
+.find {
+	background-image: url('../icons/find.png') !important
+}
+
+.clear {
+	background-image: url('../icons/page_white_delete.png') !important
+}
+
+.film_add {
+	background-image: url('../icons/film_add.png') !important
+}
+
+.film_edit {
+	background-image: url('../icons/film_edit.png') !important
+}
+
+.menu_reports {
+	background-image: url('../icons/chart_line.png') !important
+}
+
+.menu_salesfilmc {
+	background-image: url('../icons/money.png') !important
+}
+
+.print {
+	background-image: url('../icons/icoPrint.gif') !important
+}
+
+.pdf {
+	background-image: url('../icons/pdf_icon.gif') !important
+}
+
+.excel {
+	background-image: url('../icons/ms-excel.gif') !important
+}
+
+.image {
+	background-image: url('../icons/picture.png') !important
+}
+
+.svg {
+	background-image: url('../icons/photo.png') !important
+}
+
+.chart_pie {
+	background-image: url('../icons/chart_pie.png') !important
+}
+
+.chart_bar {
+	background-image: url('../icons/chart_bar.png') !important
+}
+
+.chart_column {
+	background-image: url('../icons/chart_column.png') !important
+}
+
+.download {
+	background-image: url('../icons/download.png') !important
+}
+
+.attach {
+	background: transparent url('../icons/mail/i_attach.gif') no-repeat 3px
+		3px !important;
+	text-indent: -250px
+}
+
+.flagged {
+	background: transparent url('../icons/mail/flagged.png') no-repeat 3px
+		3px !important;
+	text-indent: -250px
+}
+
+.flag-email {
+	background: transparent url('../icons/mail/flag.png') no-repeat 3px 3px
+		!important;
+	text-indent: -250px
+}
+
+.importance {
+	background: transparent url('../icons/mail/priority_high.gif') no-repeat
+		3px 3px !important;
+	text-indent: -250px
+}
+
+.icon-msg {
+	background: transparent url('../icons/mail/page.png') no-repeat 3px 3px
+		!important;
+	text-indent: -250px
+}
+
+.preview-right {
+	background-image: url('../icons/mail/preview-right.gif') !important
+}
+
+.preview-bottom {
+	background-image: url('../icons/mail/preview-bottom.gif') !important
+}
+
+.preview-hide {
+	background-image: url('../icons/mail/preview-hide.gif') !important
+}
+
+.unread {
+	background: transparent url('../icons/mail/mailclose.gif') no-repeat 3px
+		3px !important
+}
+
+.read {
+	background: transparent url('../icons/mail/mailopen.gif') no-repeat 3px
+		3px !important
+}
+
+.reply {
+	background: transparent url('../icons/mail/reply.gif') no-repeat 3px 3px
+		!important
+}
+
+.replyall {
+	background: transparent url('../icons/mail/replyall.gif') no-repeat 3px
+		3px !important
+}
+
+.fwd {
+	background: transparent url('../icons/mail/mail_forward.png') no-repeat
+		3px 3px !important
+}
+
+.menu_mailclient {
+	background-image: url('../icons/mail/email.png') !important
+}
+
+.menu_mail {
+	background-image: url('../icons/mail/email_open.png') !important
+}
+
+.folder-inbox {
+	background: transparent url('../icons/mail/folder-inbox.png') no-repeat
+		!important
+}
+
+.folder-drafts {
+	background: transparent url('../icons/mail/folder-drafts.png') no-repeat
+		!important
+}
+
+.folder-trash {
+	background: transparent url('../icons/mail/folder-trash.png') no-repeat
+		!important
+}
+
+.folder-sent {
+	background: transparent url('../icons/mail/folder-sent.png') no-repeat
+		!important
+}
+
+.selected-node .x-grid-row-selected .x-grid-cell {
+	font-weight: bold
+}
+
+.new-mail {
+	background-image: url('../icons/mail/mail_write.png') !important
+}
+
+.send-mail {
+	background-image: url('../icons/mail/email_go.png') !important
+}
+
+.bcc {
+	background-image: url('../icons/mail/mail_preferences.png') !important
+}
+
+.boldFont .x-grid-cell {
+	font-weight: bold;
+	!
+	important
+}
+
+.qc-batch-trains-div {
+	background-color: lawngreen;
+	color: #04408c;
+	float: left;
+	padding: .5em;
+	border: 1px solid #5e96db;
+	margin: 4px
+}
+
+.qc-train-iscoal td {
+	background-color: #60d791 !important
+}
+
+.prepare-pickinglist-amount-div {
+	background-color: rgba(0, 7, 252, 0.20);
+	color: #04408c;
+	float: left;
+	padding: .5em;
+	border: 1px solid #5e96db;
+	margin: 4px
+}
+
+.wm-warehouse {
+	background-image: url("../images/warehouse/warehouse.png") !important
+}
+
+.wm-zone {
+	background-image: url("../images/warehouse/zone.png") !important
+}
+
+.wm-row {
+	background-image: url("../images/warehouse/row.png") !important
+}
+
+.wm-layer {
+	background-image: url("../images/warehouse/layer.png") !important
+}
+
+.wm-position {
+	background-image: url("../images/warehouse/position.gif") !important
+}
+
+.wm-root {
+	background-image: url("../images/warehouse/root.png") !important
+}
+
+.wm-rootRow {
+	background-color: rgba(192, 199, 139, 0.61) !important
+}
+
+.wm-warehouseRow {
+	background-color: rgba(201, 217, 117, 0.55) !important
+}
+
+.wm-zoneRow {
+	background-color: rgba(185, 217, 232, 0.39) !important
+}
+
+.wm-rowRow {
+	background-color: rgba(191, 223, 238, 0.24) !important
+}
+
+.wm-layerRow {
+	background-color: rgba(255, 255, 0, 0.15) !important
+}
+
+.wm-positionRow {
+	background-color: rgba(255, 255, 0, 0.10) !important
+}
+
+.wm-fit-row {
+	background-image: url('../icons/red-arrow-left.gif') !important;
+	background-position: center;
+	background-repeat: no-repeat
+}
+
+.wm-inventory-safe {
+	background-color: #b6ffb9 !important
+}
+
+.wm-inventory-warn {
+	background-color: #ffac25 !important
+}
+
+.toggle-collapse {
+	background-image: url('../icons/toggle-collapse.png') !important
+}
+
+.align-middle {
+	vertical-align: middle
+}
+
+.align-top {
+	vertical-align: top !important
+}
+
+.data {
+	background-image: url('../icons/database_table.png') !important
+}
+
+.group {
+	background-image: url('../icons/group.png') !important
+}
+
+.user {
+	background-image: url('../icons/user.gif') !important
+}
+
+.update {
+	background-image: url('../icons/update.png') !important
+}
+
+.send {
+	background-image: url('../icons/send.png') !important
+}
+
+.refresh {
+	background-image: url('../icons/refresh.png') !important
+}
+
+.look {
+	background-image: url('../icons/look.png') !important
+}
+
+.x-grid-back-gray .x-grid-cell {
+	background-color: #b0b0b0
+}
+
+.labelStyle2 {
+	text-align: left;
+	font-weight: bold;
+	font-size: 12px;
+	color: #808000
+}
+
+.reset {
+	background-image: url('../icons/reset.png') !important
+}
+
+.float-left {
+	float: left
+}
+
+.border-1-silver-solid {
+	border: 1px solid silver
+}
+
+.margin-3 {
+	margin: 0 3px;
+	padding: 1px
+}
+
+.margin-1 {
+	margin: 0 1px
+}
+
+.noContainerNoColor .x-grid-cell {
+	background-color: orange !important
+}
+
+.alarmColor .x-grid-cell {
+	background-color: #f00 !important
+}
+
+.noExcelContainerNoColor .x-grid-cell {
+	background-color: green !important
+}
+
+.upload {
+	background-image: url('../icons/upload.png') !important
+}
+
+.alarmRedColor .x-grid-cell {
+	background-color: red !important
+}
+
+.alarmGreenColor .x-grid-cell {
+	background-color: #9f9 !important
+}
+
+.check {
+	background-image: url('../icons/check.png') !important
+}
+
+.group-grid-header-selected {
+	background-color: #dfe8f6 !important
+}
+
+.cog {
+	background-image: url('../icons/cog.png') !important
+}
+
+.noMatGrade .x-grid-cell {
+	background-color: #f0e68c !important
+}
+
+.fontRed {
+	color: red
+}
+
+.left {
+	background-image: url('../icons/arrow_left.png') !important
+}
+
+.right {
+	background-image: url('../icons/arrow_right.png') !important
+}
+
+.lookupfield {
+    background-image:url('../icons/find.png') !important;
+    background-repeat: no-repeat !important;
+    background-position: right center !important;
+    cursor:pointer;
+}
+.x-form-clear{background-image:url(../images/clear-trigger.gif)}
+
+.sgai-message {
+  background-image:url('../icons/sgai_message.png') !important;
+}
+.sgai-message-in {
+	-webkit-animation: twinkling 1s infinite ease-in-out;background-image:url('../icons/sgai_message_in.png') !important;
+}
+.sgai-message-open {
+  background-image:url('../icons/sgai_message_open.png') !important;
+}
+.message_open {
+  background-image:url('../icons/message_open.png') !important;
+}
+.message_in {
+  -webkit-animation: twinkling 1s infinite ease-in-out;background-image:url('../icons/message_in.png') !important;
+}
+.grouping {
+  background-image:url('../icons/application_view_tile.png') !important;
+}
+.menupage {
+    background-image: url(../icons/menupage.gif)!important;
+}
+.arrow-in {
+    background-image: url(../icons/arrow_in.png)!important;
+}
+.arrow-out {
+    background-image: url(../icons/arrow_out.png)!important;
+}
+.favorite {
+  background-image:url('../icons/favorite.png') !important;
+}
+.usercenter {
+  background-image:url('../icons/user.gif') !important;
+}

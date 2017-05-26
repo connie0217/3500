@@ -1,0 +1,185 @@
+body,p,h1,h2,h3,h4,h5,h6,dl,dd{
+	margin:0;
+}
+body{
+	font:12px "宋体";
+	color:#333;
+	background-color: #fff;
+}
+ul,ol{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+h1,h2,h3,h4,h5,h6,strong,b{
+	font-weight:normal;
+}
+a{
+	text-decoration:none;
+}
+img{
+	vertical-align:top;
+	border:none;
+}
+i,em{
+	font-style:normal;
+}
+table{
+	border-collapse:collapse
+}
+
+th,td{
+	padding:0;
+}
+input{
+	padding:0;
+	border:none;
+	_border:0;
+	outline: 0;
+	
+}
+fieldset{
+	padding:0;
+	margin:0;
+	border:0;
+}
+mark{
+	background:none;
+}
+/*-----------------------reset------------------*/
+body{
+  height:100%;
+}
+/*@media (min-width:0) and (max-width:800px){
+  #loginForm {
+    width: 570px;
+  }
+}*/
+
+.Main{
+  position: absolute;
+  left:0;
+  top:0;
+  right:0;
+  bottom: 0;
+  /*background: url('../images/login_bg.jpg') no-repeat;*/
+}
+  .main_header{
+  height: 12%;
+  width:100%;
+  position: absolute;
+  left:0;
+  top:0;
+  background: #000;
+  opacity: .3
+}
+.login_bg{
+  width:100%;
+  height:100%;
+  position: absolute;
+  z-index: -1;
+}
+#loginForm{
+  /*width:570px;
+  height:440px;*/
+  width:570px;
+  height: 440px;
+  background: #f6f6f6;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  position: absolute;
+  margin:auto;
+  left:0;
+  top:0;
+  right:0;
+  bottom: 0;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.4);
+  -moz-box-shadow: 3px 3px 3px rgba(0,0,0,0.4);
+  -webkit-box-shadow:3px 3px 3px rgba(0,0,0,0.4);
+}
+
+@media (min-height:900) and (max-height:1200px){
+  #loginForm {
+    height: 440px;
+  }
+}
+.login_user{
+  width: 89px;
+  height: 89px;
+  background: url('../images/touxiang.gif');
+  margin: 0 auto;
+  margin-top: -10%;
+}
+
+.username_wrap,.password_wrap,.loginBtn_wrap{
+  width:450px;
+  height: 50px;
+  background: #fff;
+  margin: 0 auto;
+  border-radius: 30px;
+  border: 1px solid #c3d1e8;
+  margin-bottom: 12px;
+}
+.inptr img{
+  height: 60%;
+  margin-left: 5%;
+  margin-top: 2%;
+}
+.inptr input,#loginBtn{
+  margin-left: 30px;
+  height: 90%;
+  margin-top: 1px;
+  margin-bottom:1px;
+  line-height: 100%;
+}
+.username_top{
+  height: 8%;
+}
+.loginBtn_wrap{
+  background: #4e7ac7;
+}
+#loginBtn{
+  background: #4e7ac7;
+  color: #fff;
+  outline: none;
+  border: 0;
+  width: 60%;
+  margin-left: 15%;
+  
+}
+#loginForm .skin_wrap{
+  margin-bottom: 0;
+}
+#loginForm .userbook{
+  border: none;
+  background: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 7%;
+  line-height: 18px;
+  text-align: right;
+}
+.userbook img{
+  height: 100%;
+}
+.userbook a{
+  color: #999;
+}
+@media (min-width:800px) and (max-width:1600px){
+  #loginForm {
+    width: 30%;
+    height: 40%;
+  }
+  .login_user{
+    margin-top: -15%;
+  }
+  .username_wrap,.password_wrap,.loginBtn_wrap{
+    width:78%;
+    height: 12%;
+  }
+}
+/*
+
+
+ */
